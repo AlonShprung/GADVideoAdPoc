@@ -1,0 +1,6 @@
+framework module Pods_AdManagerCustomRenderingExample {
+  umbrella header "Pods-AdManagerCustomRenderingExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
