@@ -42,8 +42,8 @@ class ViewController: UIViewController {
     var nativeAdView: UIView?
     
     /// The ad unit ID.
-//    let adUnitID = "/6499/example/native"
-        let adUnitID = "/175840252/fansided.com_app/fansided/video_test"
+    let adUnitID = "/6499/example/native"
+//        let adUnitID = "/175840252/fansided.com_app/fansided/video_test"
     
     override func viewDidLoad() {
         
