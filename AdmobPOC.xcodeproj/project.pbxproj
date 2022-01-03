@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		1000F6C1DFB76677573F1AB9 /* Pods-AdManagerCustomRenderingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdManagerCustomRenderingExample.release.xcconfig"; path = "Target Support Files/Pods-AdManagerCustomRenderingExample/Pods-AdManagerCustomRenderingExample.release.xcconfig"; sourceTree = "<group>"; };
-		4AEBD8B01BF01CF200874961 /* AdManagerCustomRenderingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdManagerCustomRenderingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEBD8B01BF01CF200874961 /* AdmobPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdmobPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507818C82199E5D900E5A44A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507818C92199E5D900E5A44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507818CB2199E5D900E5A44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		4AEBD8A71BF01CF200874961 = {
 			isa = PBXGroup;
 			children = (
-				507818C72199E5D900E5A44A /* AdManagerCustomRenderingExample */,
+				507818C72199E5D900E5A44A /* AdmobPOC */,
 				4AEBD8B11BF01CF200874961 /* Products */,
 				39D81D31FA25614580E39098 /* Pods */,
 				733E4E9A9C42C3DFC28E2524 /* Frameworks */,
@@ -64,12 +64,12 @@
 		4AEBD8B11BF01CF200874961 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AEBD8B01BF01CF200874961 /* AdManagerCustomRenderingExample.app */,
+				4AEBD8B01BF01CF200874961 /* AdmobPOC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		507818C72199E5D900E5A44A /* AdManagerCustomRenderingExample */ = {
+		507818C72199E5D900E5A44A /* AdmobPOC */ = {
 			isa = PBXGroup;
 			children = (
 				507818C82199E5D900E5A44A /* AppDelegate.swift */,
@@ -80,7 +80,7 @@
 				507818D22199E5D900E5A44A /* Info.plist */,
 				507818D42199E5D900E5A44A /* ViewController.swift */,
 			);
-			path = AdManagerCustomRenderingExample;
+			path = AdmobPOC;
 			sourceTree = "<group>";
 		};
 		733E4E9A9C42C3DFC28E2524 /* Frameworks */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AEBD8AF1BF01CF200874961 /* AdManagerCustomRenderingExample */ = {
+		4AEBD8AF1BF01CF200874961 /* AdmobPOC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AEBD8C21BF01CF200874961 /* Build configuration list for PBXNativeTarget "AdManagerCustomRenderingExample" */;
+			buildConfigurationList = 4AEBD8C21BF01CF200874961 /* Build configuration list for PBXNativeTarget "AdmobPOC" */;
 			buildPhases = (
 				751F7269723FF2A0D3B4A36A /* [CP] Check Pods Manifest.lock */,
 				4AEBD8AC1BF01CF200874961 /* Sources */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = AdManagerCustomRenderingExample;
+			name = AdmobPOC;
 			productName = AdManagerNativeAdvancedExample;
-			productReference = 4AEBD8B01BF01CF200874961 /* AdManagerCustomRenderingExample.app */;
+			productReference = 4AEBD8B01BF01CF200874961 /* AdmobPOC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,12 +125,12 @@
 				TargetAttributes = {
 					4AEBD8AF1BF01CF200874961 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = YKUKC63689;
+						DevelopmentTeam = 3Q72ZK24LD;
 						LastSwiftMigration = 0900;
 					};
 				};
 			};
-			buildConfigurationList = 4AEBD8AB1BF01CF200874961 /* Build configuration list for PBXProject "AdManagerCustomRenderingExample" */;
+			buildConfigurationList = 4AEBD8AB1BF01CF200874961 /* Build configuration list for PBXProject "AdmobPOC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AEBD8AF1BF01CF200874961 /* AdManagerCustomRenderingExample */,
+				4AEBD8AF1BF01CF200874961 /* AdmobPOC */,
 			);
 		};
 /* End PBXProject section */
@@ -349,18 +349,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
-				DEVELOPMENT_TEAM = YKUKC63689;
-				INFOPLIST_FILE = AdManagerCustomRenderingExample/Info.plist;
+				DEVELOPMENT_TEAM = 3Q72ZK24LD;
+				INFOPLIST_FILE = AdmobPOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.AdManagerCustomRenderingExample;
-				PRODUCT_NAME = AdManagerCustomRenderingExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minutemedia.admobpoc;
+				PRODUCT_NAME = AdmobPOC;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,25 +372,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
-				DEVELOPMENT_TEAM = YKUKC63689;
-				INFOPLIST_FILE = AdManagerCustomRenderingExample/Info.plist;
+				DEVELOPMENT_TEAM = 3Q72ZK24LD;
+				INFOPLIST_FILE = AdmobPOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.AdManagerCustomRenderingExample;
-				PRODUCT_NAME = AdManagerCustomRenderingExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minutemedia.admobpoc;
+				PRODUCT_NAME = AdmobPOC;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AEBD8AB1BF01CF200874961 /* Build configuration list for PBXProject "AdManagerCustomRenderingExample" */ = {
+		4AEBD8AB1BF01CF200874961 /* Build configuration list for PBXProject "AdmobPOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AEBD8C01BF01CF200874961 /* Debug */,
@@ -397,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AEBD8C21BF01CF200874961 /* Build configuration list for PBXNativeTarget "AdManagerCustomRenderingExample" */ = {
+		4AEBD8C21BF01CF200874961 /* Build configuration list for PBXNativeTarget "AdmobPOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AEBD8C31BF01CF200874961 /* Debug */,
