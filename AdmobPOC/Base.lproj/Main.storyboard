@@ -32,14 +32,14 @@
                                                     <constraint firstAttribute="width" secondItem="1Sh-Io-8vE" secondAttribute="height" multiplier="16:9" id="Q6T-7B-MV4"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5o-EB-vT0">
-                                                <rect key="frame" x="139" y="261" width="97" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5o-EB-vT0">
+                                                <rect key="frame" x="15" y="261" width="345" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1G-cJ-wK5" userLabel="Inner Content View">
-                                                <rect key="frame" x="8" y="292" width="359" height="120"/>
+                                                <rect key="frame" x="8" y="291.5" width="359" height="120"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-cd-pSM" userLabel="Divider View">
                                                         <rect key="frame" x="199" y="0.0" width="1" height="120"/>
@@ -57,13 +57,24 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-RC-hg1">
                                                         <rect key="frame" x="215" y="2" width="51" height="31"/>
                                                     </switch>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ad unit ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8aD-Xj-qdG">
+                                                        <rect key="frame" x="8" y="49" width="343" height="34"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="NO"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="8aD-Xj-qdG" secondAttribute="trailing" constant="8" id="4QG-si-Aj9"/>
                                                     <constraint firstItem="rjR-DR-fsc" firstAttribute="centerY" secondItem="n8S-RC-hg1" secondAttribute="centerY" id="7Hk-0V-kDF"/>
                                                     <constraint firstItem="o0V-cd-pSM" firstAttribute="centerX" secondItem="b1G-cJ-wK5" secondAttribute="centerX" constant="20" id="8Bz-et-LP8"/>
-                                                    <constraint firstAttribute="height" constant="120" id="DLH-W6-07J"/>
                                                     <constraint firstAttribute="bottom" secondItem="o0V-cd-pSM" secondAttribute="bottom" id="F3c-eK-PvG"/>
+                                                    <constraint firstAttribute="height" constant="120" id="HOe-Mi-Hnh"/>
+                                                    <constraint firstItem="8aD-Xj-qdG" firstAttribute="top" secondItem="n8S-RC-hg1" secondAttribute="bottom" constant="16" id="Jh2-Jr-WrL"/>
+                                                    <constraint firstItem="8aD-Xj-qdG" firstAttribute="leading" secondItem="b1G-cJ-wK5" secondAttribute="leading" constant="8" id="LQc-aI-FEi"/>
                                                     <constraint firstItem="o0V-cd-pSM" firstAttribute="top" secondItem="b1G-cJ-wK5" secondAttribute="top" id="U9h-DR-sD2"/>
                                                     <constraint firstItem="rjR-DR-fsc" firstAttribute="top" secondItem="b1G-cJ-wK5" secondAttribute="top" constant="7" id="aMf-hv-wnb"/>
                                                     <constraint firstItem="o0V-cd-pSM" firstAttribute="leading" secondItem="rjR-DR-fsc" secondAttribute="trailing" constant="8" id="etr-Bu-hUc"/>
@@ -77,7 +88,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-G3-56i">
-                                                <rect key="frame" x="8" y="422" width="359" height="33"/>
+                                                <rect key="frame" x="8" y="421.5" width="359" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Refresh Ad"/>
                                                 <connections>
@@ -85,7 +96,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wr-xv-uRC">
-                                                <rect key="frame" x="140" y="465" width="95" height="21"/>
+                                                <rect key="frame" x="140" y="464.5" width="95" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -94,7 +105,9 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Yit-G3-56i" firstAttribute="leading" secondItem="aoz-Ty-tIG" secondAttribute="leading" constant="8" id="0km-6S-Kav"/>
+                                            <constraint firstAttribute="trailing" secondItem="h5o-EB-vT0" secondAttribute="trailing" constant="15" id="3C5-Ne-EWY"/>
                                             <constraint firstAttribute="height" constant="650" id="3o2-dR-k9w"/>
+                                            <constraint firstItem="h5o-EB-vT0" firstAttribute="leading" secondItem="aoz-Ty-tIG" secondAttribute="leading" constant="15" id="6GF-hR-iFz"/>
                                             <constraint firstItem="Yit-G3-56i" firstAttribute="top" secondItem="b1G-cJ-wK5" secondAttribute="bottom" constant="10" id="F0C-dc-jNl"/>
                                             <constraint firstAttribute="trailing" secondItem="1Sh-Io-8vE" secondAttribute="trailing" constant="8" id="F86-uF-VL5"/>
                                             <constraint firstItem="h5o-EB-vT0" firstAttribute="top" secondItem="1Sh-Io-8vE" secondAttribute="bottom" constant="10" id="LkZ-kT-3nY"/>
@@ -131,6 +144,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customTagTextField" destination="8aD-Xj-qdG" id="ZY2-UJ-Lv5"/>
                         <outlet property="nativeAdPlaceholder" destination="1Sh-Io-8vE" id="JK7-70-wUb"/>
                         <outlet property="refreshAdButton" destination="Yit-G3-56i" id="lo5-yc-qZ7"/>
                         <outlet property="startMutedSwitch" destination="n8S-RC-hg1" id="7Qq-VB-Fw0"/>
@@ -140,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qc6-If-fqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427.536231884058" y="174.77678571428569"/>
+            <point key="canvasLocation" x="426.39999999999998" y="174.06296851574214"/>
         </scene>
     </scenes>
     <resources>

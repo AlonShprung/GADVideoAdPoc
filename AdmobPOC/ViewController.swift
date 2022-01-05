@@ -17,7 +17,7 @@
 import GoogleMobileAds
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     // The view that holds the native ad.
     @IBOutlet weak var nativeAdPlaceholder: UIView!
@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     // Switch to indicate if video ads should start muted.
     @IBOutlet weak var startMutedSwitch: UISwitch!
     
+    @IBOutlet weak var customTagTextField: UITextField!
+    
+    
     /// The ad loader. You must keep a strong reference to the GADAdLoader during the ad loading
     /// process.
     var adLoader: GADAdLoader!
@@ -42,14 +45,32 @@ class ViewController: UIViewController {
     var nativeAdView: UIView?
     
     /// The ad unit ID.
-//    let adUnitID = "/6499/example/native"
-    let adUnitID = "/175840252/fansided.com_app/fansided/video_test"
+    let exampleAdUnitID = "/6499/example/native"
+//    let adUnitID = "/175840252/fansided.com_app/fansided/video_test"
+    
+    var currentAdUnitID = "/6499/example/native" {
+        didSet {
+            refreshAd(self)
+        }
+    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         versionLabel.text = GADMobileAds.sharedInstance().sdkVersion
         refreshAd(nil)
+        customTagTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        refreshAdButton.isEnabled = true
+        currentAdUnitID = textField.text ?? exampleAdUnitID
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        refreshAdButton.isEnabled = false
     }
     
     func setAdView(_ view: UIView) {
@@ -78,13 +99,14 @@ class ViewController: UIViewController {
     
     /// Refreshes the native ad.
     @IBAction func refreshAd(_ sender: AnyObject!) {
+        nativeAdView?.removeFromSuperview()
         let adTypes: [GADAdLoaderAdType] = [.native]
         
         refreshAdButton.isEnabled = false
         let videoOptions = GADVideoOptions()
         videoOptions.startMuted = startMutedSwitch.isOn
         adLoader = GADAdLoader(
-            adUnitID: adUnitID, rootViewController: self,
+            adUnitID: currentAdUnitID, rootViewController: self,
             adTypes: adTypes, options: [videoOptions])
         adLoader.delegate = self
         adLoader.load(GADRequest())
@@ -100,9 +122,9 @@ class ViewController: UIViewController {
         if hasVideoContent {
             // By acting as the delegate to the GADVideoController, this ViewController receives messages
             // about events in the video lifecycle.
-            videoStatusLabel.text = "Ad contains a video asset."
+            videoStatusLabel.text = "Tag: \(currentAdUnitID)\nAd contains a video asset."
         } else {
-            videoStatusLabel.text = "Ad does not contain a video."
+            videoStatusLabel.text = "Tag: \(currentAdUnitID)\nAd does not contain a video."
         }
     }
 }
@@ -113,6 +135,7 @@ extension ViewController: GADAdLoaderDelegate {
     
     func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
         print("\(adLoader) failed with error: \(error.localizedDescription)")
+        videoStatusLabel.text = "Tag: \(currentAdUnitID)\nFailed to load the ad unit id"
         refreshAdButton.isEnabled = true
     }
 }
