@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AEBD8AF1BF01CF200874961"
-               BuildableName = "AdManagerCustomRenderingExample.app"
+               BuildableName = "AdmobPOC.app"
                BlueprintName = "AdmobPOC"
                ReferencedContainer = "container:AdmobPOC.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AEBD8AF1BF01CF200874961"
-            BuildableName = "AdManagerCustomRenderingExample.app"
+            BuildableName = "AdmobPOC.app"
             BlueprintName = "AdmobPOC"
             ReferencedContainer = "container:AdmobPOC.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AEBD8AF1BF01CF200874961"
-            BuildableName = "AdManagerCustomRenderingExample.app"
+            BuildableName = "AdmobPOC.app"
             BlueprintName = "AdmobPOC"
             ReferencedContainer = "container:AdmobPOC.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AEBD8AF1BF01CF200874961"
-            BuildableName = "AdManagerCustomRenderingExample.app"
+            BuildableName = "AdmobPOC.app"
             BlueprintName = "AdmobPOC"
             ReferencedContainer = "container:AdmobPOC.xcodeproj">
          </BuildableReference>
