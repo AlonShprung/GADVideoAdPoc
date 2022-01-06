@@ -135,7 +135,7 @@ extension ViewController: GADAdLoaderDelegate {
     
     func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
         print("\(adLoader) failed with error: \(error.localizedDescription)")
-        videoStatusLabel.text = "Tag: \(currentAdUnitID)\nFailed to load the ad unit id"
+        videoStatusLabel.text = "Tag: \(currentAdUnitID)\nFailed: \(error.localizedDescription)"
         refreshAdButton.isEnabled = true
     }
 }
